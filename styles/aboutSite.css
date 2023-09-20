@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #131313;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 200px;
+  background-color: #0059ff;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header_logo {
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.header_logo a {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  color: #ebebeb;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_item {
+  padding-right: 40px;
+  font-size: 14px;
+}
+
+.nav_item a {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0);
+  color: #ebebeb;
+}
+
+.nav_btn {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  padding: 12px 18px;
+  border: 1px solid #ebebeb;
+  background-color: #ebebeb;
+  color: #0059ff;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.nav_btn:hover {
+  border: 1px solid #ebebeb;
+  background-color: #0059ff;
+  color: #ebebeb;
+}
+
+main {
+  height: 100%;
+}
+
+/* discription */
+
+.discription {
+  margin: 100px 100px;
+  margin-bottom: 150px;
+}
+
+.discription h1 {
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.discription p {
+  font-size: 20px;
+}
+
+/* footer */
+
+footer {
+  height: 10vh;
+  background-color: #0059ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h1 {
+  color: #ebebeb;
+}

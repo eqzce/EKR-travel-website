@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #131313;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+.more-btn {
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding-left: 90%;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.more-btn a {
+  color: #0059ff;
+}
+
+.more-btn:hover {
+  transform: translateX(1%);
+}
+
+.language_ru-btn {
+  right: 120px;
+  position: absolute;
+  color: #ebebeb;
+}
+
+.language_en-btn {
+  right: 80px;
+  position: absolute;
+  color: #ebebeb;
+}
+
+.language_kz-btn {
+  right: 40px;
+  position: absolute;
+  color: #ebebeb;
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 200px;
+  background-color: #0059ff;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header_logo {
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.header_logo a {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  color: #ebebeb;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_item {
+  padding-right: 40px;
+  font-size: 14px;
+}
+
+.nav_item a {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0);
+  color: #ebebeb;
+}
+
+.nav_btn {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 20px;
+  padding: 12px 18px;
+  border: 1px solid #ebebeb;
+  background-color: #ebebeb;
+  color: #0059ff;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.nav_btn:hover {
+  border: 1px solid #ebebeb;
+  background-color: #0059ff;
+  color: #ebebeb;
+}
+
+.top_bg {
+  background-image: url(/imgs/1647606479_4-pibig-info-p-priroda-vostochnogo-kazakhstana-priroda-kr-4.jpg);
+  background-size: cover;
+  position: absolute;
+  overflow: hidden;
+  z-index: -99;
+  top: 0;
+  height: 70vh;
+  width: 100%;
+  background-position: 0px 700px;
+  border-radius: 0 0 30px 30px;
+}
+
+/* about_site */
+
+.welcome {
+  margin: 220px 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome_title {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: #ebebeb;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.welcome_subtitle {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: #ebebeb;
+  text-align: center;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.search_place {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_place_input {
+  width: 90%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.search_place_btn {
+  padding: 15px;
+  width: 10%;
+  background-color: #0059ff;
+  color: #ebebeb;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* attractions */
+
+.attractions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  margin: 0 100px;
+  margin-top: 300px;
+  margin-bottom: 50px;
+}
+
+.attractions_water {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.attractions_mountain {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.attractions_other {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.attractions_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.attractions_title {
+  font-size: 40px;
+}
+
+.attractions_subtitle {
+  margin-top: -5px;
+  margin-left: 4px;
+  margin-bottom: 20px;
+}
+
+.attractions_cards_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.attractions_card {
+  width: 32.7%;
+  display: flex;
+  position: relative;
+  height: 70vh;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+.attractions_card:hover {
+  transform: scale(1.02);
+}
+
+/* attraction images */
+
+.attraction_img-1 {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.attraction_img-1 img {
+  height: 100%;
+  width: auto;
+  padding-right: 10px;
+}
+
+.attraction_img-2 {
+  overflow: hidden;
+  width: 100%;
+}
+
+.attraction_img-2 img {
+  transform: translateX(-40%);
+  height: 100%;
+  width: auto;
+  padding-right: 10px;
+}
+
+.attraction_img-3 {
+  width: auto;
+  padding-right: 10px;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.attraction_img-3 img {
+  transform: translateX(-20%);
+  height: 70vh;
+}
+
+.attractions_card_title {
+  position: absolute;
+  bottom: 0;
+  padding: 25px;
+}
+
+.attractions_card_title h1 {
+  color: #ebebeb;
+  font-size: 40px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* footer */
+
+footer {
+  height: 10vh;
+  background-color: #0059ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h1 {
+  color: #ebebeb;
+}

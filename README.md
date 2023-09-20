@@ -2,4 +2,4 @@
 - html5
 - css3
  
-link:
+link: https://eqzce.github.io/EKR-travel-website/

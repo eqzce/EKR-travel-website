@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Туристтік веб-сайт</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <!-- bg -->
+    <div class="top_bg"></div>
+
+    <!-- header -->
+
+    <header>
+      <div class="header_logo"><a href="">Лого</a></div>
+      <nav>
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="/index.html">Басты бет</a>
+          </li>
+          <li class="nav_item">
+            <a href="#attractions">Көріктелер</a>
+          </li>
+          <li class="nav_item"><a href="./aboutSite.html">Сайт туралы</a></li>
+        </ul>
+      </nav>
+      <a class="nav_btn" href="">Билет сатып алу</a>
+      <a href="../index.html" class="language_ru-btn">RU</a>
+      <a href="../engHtml/engindex.html" class="language_en-btn">EN</a>
+      <a href="./kzindex.html" class="language_kz-btn">KZ</a>
+    </header>
+
+    <!-- main -->
+
+    <main>
+      <!-- welcome -->
+
+      <section class="welcome">
+        <div class="container">
+          <div class="welcome_text">
+            <h1 class="welcome_title">Туристический веб-сайт Название</h1>
+            <p class="welcome_subtitle">
+              Біздің сайт еліміздің ең әдемі, көрікті жерлеріне саяхат жасауға
+              көмектеседі
+              <br />
+              Біздің мемлекеттің ең көрікті жерлерін бір батырманы басумен
+              көріңіз
+            </p>
+          </div>
+          <form class="search_place" action="/" method="get">
+            <input
+              class="search_place_input"
+              name="search"
+              placeholder="Атын енгізіңіз"
+              type="search"
+            />
+            <button class="search_place_btn" type="submit">Поиск</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- attractions -->
+
+      <section id="attractions" class="attractions">
+        <!-- attractions_water -->
+
+        <div class="attractions_water">
+          <div class="attractions_text">
+            <div class="attractions_title">
+              <h1>Сулар</h1>
+            </div>
+            <div class="attractions_subtitle">
+              <p>Көріктелер</p>
+            </div>
+          </div>
+          <div class="attractions_cards_row">
+            <a
+              target="_blank"
+              class="attractions_card"
+              href="../descriptions/buchtarma.html"
+            >
+              <div class="attraction_img-1">
+                <img
+                  src="https://kazkurort.kz/upload/regiony/kazahstan/buhtarma/buhtarma-hrebet.jpg"
+                  alt=""
+                />
+                <div class="attractions_card_title">
+                  <h1>Бұқтырма су қоймасы</h1>
+                </div>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              class="attractions_card"
+              href="../descriptions/rakhman.html"
+            >
+              <div class="attraction_img-2">
+                <img
+                  src="https://adrenalinicsilence.kz/wp-content/uploads/2021/10/5-rahmanovskie-klyuchi-altai.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="attractions_card_title">
+                <h1>Рахман көлі</h1>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              class="attractions_card"
+              href="../descriptions/markakol.html"
+            >
+              <div class="attraction_img-3">
+                <img
+                  src="https://greenway.kz/upload/medialibrary/61e/61ededd7ab0a2a21479327c1dda07b04.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="attractions_card_title">
+                <h1>Марқакөл көлі</h1>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="more-btn">
+          <a href="#">көбірек ></a>
+        </div>
+
+        <!-- attractions_mountain -->
+
+        <div class="attractions_mountain">
+          <div class="attractions_text">
+            <div class="attractions_title">
+              <h1>Таулы</h1>
+            </div>
+            <div class="attractions_subtitle">
+              <p>Көріктелер</p>
+            </div>
+          </div>
+          <div class="attractions_cards_row">
+            <a
+              target="_blank"
+              class="attractions_card"
+              href="../descriptions/altay.html"
+            >
+              <div class="attraction_img-1">
+                <img
+                  src="https://pavon.kz/cache/normal/media/img/gallery/source/2039/1421294678_Vid_zima.JPG"
+                  alt=""
+                />
+                <div class="attractions_card_title">
+                  <h1>Алтай Альпісі</h1>
+                </div>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              class="attractions_card"
+              href="../descriptions/gornolyzh.html"
+            >
+              <div class="attraction_img-2">
+                <img
+                  src="https://weektravelling.com/wp-content/uploads//2021/08/shutterstock_1235637088.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="attractions_card_title">
+                <h1>Шаңғы тебу кешені «Изумрудный»</h1>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              class="attractions_card"
+              href="../descriptions/kazakhstanMountain.html"
+            >
+              <div class="attraction_img-3">
+                <img src="https://a.d-cd.net/9fda282s-960.jpg" alt="" />
+              </div>
+              <div class="attractions_card_title">
+                <h1>Қазақстан тауы</h1>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="more-btn">
+          <a href="#">көбірек ></a>
+        </div>
+
+        <!-- attractions_other -->
+
+        <div class="attractions_other">
+          <div class="attractions_text">
+            <div class="attractions_title">
+              <h1>Басқалар</h1>
+            </div>
+            <div class="attractions_subtitle">
+              <p>Көріктелер</p>
+            </div>
+          </div>
+          <div class="attractions_cards_row">
+            <a
+              target="_blank"
+              class="attractions_card"
+              href="../descriptions/kiinKerish.html"
+            >
+              <div class="attraction_img-1">
+                <img
+                  src="https://ticketon.kz/files/media/urochishhe-kiinkerish2021%20(5)%20(1).jpg"
+                  alt=""
+                />
+                <div class="attractions_card_title">
+                  <h1>Қиын-керіш шатқалы</h1>
+                </div>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              class="attractions_card"
+              href="../descriptions/akbaur.html"
+            >
+              <div class="attraction_img-2">
+                <img src="https://a.d-cd.net/95d3756s-1920.jpg" alt="" />
+              </div>
+              <div class="attractions_card_title">
+                <h1>Ежелгі астрологиялық кешен Ақбауыр</h1>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              class="attractions_card"
+              href="../descriptions/kozyKorpesh.html"
+            >
+              <div class="attraction_img-3">
+                <img
+                  src="https://qazaqstan3d.kz/upload/orig/place/188782_1504380447.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="attractions_card_title">
+                <h1>Қозы Көрпеш-Баян сұлу кесенесі</h1>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="more-btn">
+          <a href="#">көбірек ></a>
+        </div>
+      </section>
+      <footer>
+        <div class="footer_text">
+          <h1>Сайтты жасаған Муратбек Ерсултан</h1>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

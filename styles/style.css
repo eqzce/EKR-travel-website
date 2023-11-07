@@ -8,6 +8,20 @@
   color: #131313;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0059ff;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: #dadada;
+}
+
 a {
   text-decoration: none;
 }
@@ -16,10 +30,16 @@ body {
   background-color: #ebebeb;
 }
 
+.body_all {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
 .more-btn {
   font-weight: 700;
-  margin-bottom: 50px;
-  padding-left: 90%;
+  margin-bottom: 8vh;
+  padding-left: 93%;
   font-size: 18px;
   transition: 0.2s;
 }
@@ -30,6 +50,11 @@ body {
 
 .more-btn:hover {
   transform: translateX(1%);
+}
+
+.languages {
+  display: flex;
+  list-style: none;
 }
 
 .language_ru-btn {
@@ -50,20 +75,34 @@ body {
   color: #ebebeb;
 }
 
+.top_bg {
+  background-image: url(https://pbs.twimg.com/media/F6e7PP6WMAAiF3G?format=jpg&name=large);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow: hidden;
+  z-index: -99;
+  top: 0;
+  height: 70vh;
+  width: 100%;
+  background-position: 0px 90%;
+  border-radius: 0 0 30px 30px;
+}
+
 /* header */
 
 header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 200px;
+  padding: 1.5vh 12vw;
   background-color: #0059ff;
   border-radius: 0px 0px 10px 10px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .header_logo {
-  margin-left: 20px;
   margin-right: auto;
 }
 
@@ -74,6 +113,44 @@ header {
   font-size: 28px;
 }
 
+.header_burger-btn {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.header_burger-btn span {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #ebebeb;
+  left: 10%;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.header_burger-btn span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.header_burger-btn span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.header.open .header_burger-btn span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.header.open .header_burger-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header_burger-btn span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
 .nav_list {
   list-style: none;
   display: flex;
@@ -82,19 +159,23 @@ header {
 }
 
 .nav_item {
-  padding-right: 40px;
+  padding-right: 3vw;
   font-size: 14px;
 }
 
 .nav_item a {
   text-shadow: 0 0 20px rgba(0, 0, 0, 0);
   color: #ebebeb;
+  transition: 0.3s;
+}
+
+.nav_item a:hover {
+  color: #8f8f8f;
 }
 
 .nav_btn {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
-  margin-right: 20px;
-  padding: 12px 18px;
+  padding: 1vh 1.5vw;
   border: 1px solid #ebebeb;
   background-color: #ebebeb;
   color: #0059ff;
@@ -108,23 +189,11 @@ header {
   color: #ebebeb;
 }
 
-.top_bg {
-  background-image: url(https://pbs.twimg.com/media/F6e7PP6WMAAiF3G?format=jpg&name=large);
-  background-size: cover;
-  position: absolute;
-  overflow: hidden;
-  z-index: -99;
-  top: 0;
-  height: 70vh;
-  width: 100%;
-  background-position: 0px 700px;
-  border-radius: 0 0 30px 30px;
-}
-
 /* about_site */
 
 .welcome {
-  margin: 220px 250px;
+  margin: 22vh 15vw;
+  margin-bottom: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,19 +204,18 @@ header {
   color: #ebebeb;
   text-align: center;
   font-size: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 1vh;
 }
 
 .welcome_subtitle {
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   color: #ebebeb;
   text-align: center;
-  margin-left: 5px;
   font-size: 16px;
 }
 
 .search_place {
-  margin-top: 15px;
+  margin-top: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,7 +230,7 @@ header {
 
 .search_place_btn {
   padding: 15px;
-  width: 10%;
+  width: 100px;
   background-color: #0059ff;
   color: #ebebeb;
   border: none;
@@ -176,25 +244,25 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: baseline;
-  margin: 0 100px;
-  margin-top: 300px;
-  margin-bottom: 50px;
+  margin: 0 13vw;
+  margin-top: 12vh;
+  margin-bottom: 3vh;
 }
 
 .attractions_water {
   position: relative;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 5vh;
 }
 
 .attractions_mountain {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 5vh;
 }
 
 .attractions_other {
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 5vh;
 }
 
 .attractions_text {
@@ -208,8 +276,8 @@ header {
 
 .attractions_subtitle {
   margin-top: -5px;
-  margin-left: 4px;
-  margin-bottom: 20px;
+  margin-left: 3px;
+  margin-bottom: 2vh;
 }
 
 .attractions_cards_row {
@@ -224,8 +292,8 @@ header {
   display: flex;
   position: relative;
   height: 70vh;
-  margin-right: 10px;
-  transition: 0.2s;
+  margin-right: 0.5vw;
+  transition: 0.3s;
 }
 
 .attractions_card:hover {
@@ -236,50 +304,98 @@ header {
 
 .attraction_img-1 {
   overflow: hidden;
-  width: 100%;
   border-radius: 20px 0px 0px 20px;
 }
 
 .attraction_img-1 img {
   height: 100%;
-  width: auto;
-  padding-right: 10px;
 }
 
 .attraction_img-2 {
   overflow: hidden;
-  width: 100%;
 }
 
 .attraction_img-2 img {
-  transform: translateX(-40%);
   height: 100%;
-  width: auto;
-  padding-right: 10px;
+  transform: translateX(-40%);
 }
 
 .attraction_img-3 {
-  width: auto;
-  padding-right: 10px;
   overflow: hidden;
-  width: 100%;
   border-radius: 0px 20px 20px 0px;
 }
 
 .attraction_img-3 img {
+  transform: translateX(-30%);
+  height: 100%;
+}
+
+.attraction_img-4 {
+  overflow: hidden;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.attraction_img-4 img {
+  height: 100%;
+}
+
+.attraction_img-5 {
+  overflow: hidden;
+}
+
+.attraction_img-5 img {
+  height: 100%;
+  transform: translateX(-40%);
+}
+
+.attraction_img-6 {
+  overflow: hidden;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.attraction_img-6 img {
   transform: translateX(-20%);
-  height: 70vh;
+  height: 100%;
+}
+
+.attraction_img-7 {
+  overflow: hidden;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.attraction_img-7 img {
+  height: 100%;
+  transform: translateX(-20%);
+}
+
+.attraction_img-8 {
+  overflow: hidden;
+}
+
+.attraction_img-8 img {
+  height: 100%;
+  transform: translateX(-30%);
+}
+
+.attraction_img-9 {
+  overflow: hidden;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.attraction_img-9 img {
+  transform: translateX(-26%);
+  height: 100%;
 }
 
 .attractions_card_title {
   position: absolute;
   bottom: 0;
-  padding: 25px;
+  padding: 2vh 1.2vw;
 }
 
 .attractions_card_title h1 {
   color: #ebebeb;
-  font-size: 40px;
+  font-size: 30px;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -295,4 +411,301 @@ footer {
 
 footer h1 {
   color: #ebebeb;
+}
+
+@media (max-width: 1440px) {
+
+  .attraction_img-2 img {
+    height: 100%;
+    transform: translateX(-50%);
+  }
+
+  .attraction_img-3 img {
+    transform: translateX(-47%);
+    height: 100%;
+  }
+
+  .attraction_img-5 img {
+    height: 100%;
+    transform: translateX(-55%);
+  }
+
+  .attraction_img-6 img {
+    transform: translateX(-25%);
+    height: 100%;
+  }
+
+  .attraction_img-7 img {
+    height: 100%;
+    transform: translateX(-25%);
+  }
+
+  .attraction_img-8 img {
+    height: 100%;
+    transform: translateX(-42%);
+  }
+
+  .attraction_img-9 img {
+    transform: translateX(-30%);
+    height: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .language_ru-btn {
+    right: 90px;
+    font-size: 12px;
+  }
+
+  .language_en-btn {
+    right: 60px;
+    font-size: 12px;
+  }
+
+  .language_kz-btn {
+    right: 30px;
+    font-size: 12px;
+  }
+
+  .welcome {
+    margin: 21vh 15vw;
+  }
+
+  .attractions_card_title h1 {
+    font-size: 20px;
+  }
+
+  .attractions_card {
+    height: 50vh;
+  }
+
+  .attractions {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome {
+    margin: 22vh 7vw;
+  }
+
+  .welcome_title {
+    font-size: 40px;
+  }
+
+  .welcome_subtitle {
+    font-size: 14px;
+  }
+
+  .language_ru-btn {
+    right: 70px;
+    font-size: 10px;
+  }
+
+  .language_en-btn {
+    right: 50px;
+    font-size: 10px;
+  }
+
+  .language_kz-btn {
+    right: 30px;
+    font-size: 10px;
+  }
+
+  .nav_item {
+    padding-right: 3vw;
+    font-size: 12px;
+  }
+
+  .nav_btn {
+    font-size: 12px;
+  }
+
+  .attraction_img-2 img {
+    height: 100%;
+    transform: translateX(-57%);
+  }
+
+  .attraction_img-3 img {
+    transform: translateX(-55%);
+    height: 100%;
+  }
+
+  .attraction_img-6 img {
+    transform: translateX(-30%);
+    height: 100%;
+  }
+
+  .attraction_img-7 img {
+    height: 100%;
+    transform: translateX(-27%);
+  }
+
+  .attraction_img-8 img {
+    height: 100%;
+    transform: translateX(-50%);
+  }
+
+  .attraction_img-9 img {
+    transform: translateX(-36%);
+    height: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .more-btn {
+    font-size: 13px;
+  }
+
+  .languages li .language_ru-btn {
+    position: absolute;
+    top: 17%;
+    right: 80%;
+  }
+
+  .languages li .language_en-btn {
+    position: absolute;
+    top: 17%;
+    right: 70%;
+  }
+
+  .languages li .language_kz-btn {
+    position: absolute;
+    top: 17%;
+    right: 60%;
+  }
+
+  .more-btn {
+    padding-left: 80%;
+    margin-bottom: 5vh;
+  }
+
+  .top_bg {
+    height: 55vh;
+  }
+
+  .header_burger-btn {
+    margin-right: -40px;
+    display: block;
+  }
+
+  .nav_btn {
+    margin-right: 20px;
+  }
+
+  nav {
+    overflow: hidden;
+    position: absolute;
+    right: -180px;
+    top: 0;
+    background-color: #001e57;
+    padding: 70px 10px 10px 15px;
+    width: 180px;
+    transition: transform 0.3s;
+    border-radius: 0px 0px 0px 20px;
+  }
+
+  .nav_list {
+    text-align: right;
+    display: block;
+  }
+
+  .nav_item {
+    font-size: 10px;
+    padding: 7px 0;
+  }
+
+  .header.open nav {
+    transform: translateX(-100%);
+  }
+
+  .welcome {
+    margin: 13vh 2vw;
+  }
+
+  .welcome_title {
+    font-size: 30px;
+    margin-bottom: 1vh;
+  }
+
+  .welcome_subtitle {
+    font-size: 11px;
+  }
+
+  .search_place {
+    margin-top: 2vh;
+  }
+
+  .search_place_input {
+    font-size: 11px;
+  }
+
+  .search_place_btn {
+    font-size: 11px;
+    padding: 15px;
+  }
+
+  .attractions {
+    margin-top: 5vh;
+  }
+
+  .attractions_title {
+    font-size: 27px;
+  }
+
+  .attractions_subtitle {
+    margin-top: -2px;
+    font-size: 11px;
+  }
+
+  .attractions_card_title h1 {
+    font-size: 12px;
+  }
+
+  .attractions_card {
+    height: 30vh;
+  }
+
+  footer h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .top_bg {
+    height: 53vh;
+  }
+
+  .welcome_title {
+    font-size: 25px;
+    margin-bottom: 1vh;
+  }
+
+  .welcome_subtitle {
+    font-size: 10px;
+  }
+
+  .attractions {
+    margin-top: 4vh;
+  }
+
+  .attractions_card_title h1 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .attractions {
+    margin-top: 3vh;
+  }
+
+  .attractions_title {
+    font-size: 24px;
+  }
+
+  footer h1 {
+    font-size: 16px;
+  }
 }

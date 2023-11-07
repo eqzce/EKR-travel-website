@@ -474,7 +474,6 @@ footer h1 {
 @media (max-width: 768px) {
   .welcome {
     margin: 22vh 7vw;
-    margin-bottom: 27vh;
   }
 
   .welcome_title {
@@ -608,8 +607,7 @@ footer h1 {
   }
 
   .welcome {
-    margin: 13vh 2vw;
-    margin-bottom: 17vh;
+    margin: 13vh 5vw;
   }
 
   .welcome_title {
@@ -635,6 +633,7 @@ footer h1 {
   }
 
   .attractions {
+    margin: 0 8vw;
     margin-top: 5vh;
   }
 
@@ -665,11 +664,6 @@ footer h1 {
     height: 53vh;
   }
 
-  .welcome {
-    margin: 13vh 2vw;
-    margin-bottom: 14vh;
-  }
-  
   .welcome_title {
     font-size: 25px;
     margin-bottom: 1vh;
@@ -680,6 +674,7 @@ footer h1 {
   }
 
   .attractions {
+    margin: 0 8vw;
     margin-top: 4vh;
   }
 
@@ -691,6 +686,7 @@ footer h1 {
 @media (max-width: 320px) {
 
   .attractions {
+    margin: 0 6vw;
     margin-top: 3vh;
   }
 

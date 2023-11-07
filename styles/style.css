@@ -455,7 +455,6 @@ footer h1 {
 
   .welcome {
     margin: 21vh 15vw;
-    margin-bottom: 30vh;
   }
 
   .attractions_card_title h1 {
@@ -475,7 +474,7 @@ footer h1 {
 @media (max-width: 768px) {
   .welcome {
     margin: 22vh 7vw;
-    margin-bottom: 25vh;
+    margin-bottom: 27vh;
   }
 
   .welcome_title {
@@ -610,7 +609,7 @@ footer h1 {
 
   .welcome {
     margin: 13vh 2vw;
-    margin-bottom: 20vh;
+    margin-bottom: 17vh;
   }
 
   .welcome_title {
@@ -666,6 +665,11 @@ footer h1 {
     height: 53vh;
   }
 
+  .welcome {
+    margin: 13vh 2vw;
+    margin-bottom: 14vh;
+  }
+  
   .welcome_title {
     font-size: 25px;
     margin-bottom: 1vh;

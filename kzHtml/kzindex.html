@@ -7,29 +7,40 @@
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
+    <div class="body_all">
     <!-- bg -->
     <div class="top_bg"></div>
 
     <!-- header -->
 
-    <header>
-      <div class="header_logo"><a href="">Лого</a></div>
-      <nav>
-        <ul class="nav_list">
-          <li class="nav_item">
-            <a href="../index.html">Басты бет</a>
-          </li>
-          <li class="nav_item">
-            <a href="#attractions">Көріктелер</a>
-          </li>
-          <li class="nav_item"><a href="../aboutSite.html">Сайт туралы</a></li>
-        </ul>
-      </nav>
-      <a class="nav_btn" href="">Билет сатып алу</a>
-      <a href="../index.html" class="language_ru-btn">RU</a>
-      <a href="../engHtml/engindex.html" class="language_en-btn">EN</a>
-      <a href="./kzindex.html" class="language_kz-btn">KZ</a>
-    </header>
+    <header class="header">
+        <div class="header_logo"><a href="">Лого</a></div>
+        <nav>
+          <ul class="languages">
+            <li><a href="./index.html" class="language_ru-btn">RU</a></li>
+            <li>
+              <a href="./engHtml/engindex.html" class="language_en-btn">EN</a>
+            </li>
+            <li>
+              <a href="./kzHtml/kzindex.html" class="language_kz-btn">KZ</a>
+            </li>
+          </ul>
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="./index.html">Главная</a>
+            </li>
+            <li class="nav_item">
+              <a href="#attractions">Достопримечательности</a>
+            </li>
+            <li class="nav_item"><a href="">О сайте</a></li>
+          </ul>
+        </nav>
+        <a class="nav_btn" href="">Купить билет</a>
+
+        <button class="header_burger-btn" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+      </header>
 
     <!-- main -->
 
@@ -252,5 +263,7 @@
         </div>
       </footer>
     </main>
+    </div>
+    <script src="../scripts/main.js"></script>
   </body>
 </html>
